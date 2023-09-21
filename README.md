@@ -11,12 +11,12 @@ Once you have Node.js installed you should be able to run the following commands
 ```
 If it is successfully running, you should see "Listening on port: 8080"
 ### Running with Docker
-Alternatively, if you have Docker installed then you can run these commands (cd into the server folder):
+Alternatively, if you have Docker installed then this the required Docker command:
 ```terminal
   docker build -t fetch-receipt-processor-challenge . 
 ```
 ---
-## Assessment Guidelines
+## Original Assessment Guidelines 
 
 ### Endpoint: Process Receipts
 
