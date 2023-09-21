@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
-const items = new mongoose.Schema({
+const items = {
     shortDescription: {
         // reference api.yml file maybe change data types and formats to match exercise
         type: String,
@@ -13,9 +13,9 @@ const items = new mongoose.Schema({
         required: [true, "Must enter a price."],
         // min: [1, "Price must be more than 0"], 
     }
-})
+}
 
-const receiptSchema = new mongoose.Schema({
+const receiptSchema = {
     retailer: {
         // one point for every alphanumeric character
         type: String,
@@ -41,5 +41,6 @@ const receiptSchema = new mongoose.Schema({
         pattern:["^\\d+\\.\\d{2}$"],
         required: [true, "Please enter the total amount paid on the receipt."],
     }
-},  { timestamps: true });
-module.exports = mongoose.model('receipt', receiptSchema);
+};
+// module.exports = mongoose.model('receipt', receiptSchema);
+module.exports = ('receipt', receiptSchema);

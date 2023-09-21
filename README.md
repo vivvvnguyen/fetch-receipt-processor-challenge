@@ -1,7 +1,22 @@
 # fetch-reciept-processor-challenge
-
 ---
-## Summary of API Specification
+## Running Project
+This project is written in JavaScript (node.js). 
+### Running Locally
+To download Node.js please click this [link](https://nodejs.org/en/download). 
+Once you have Node.js installed you should be able to run the following commands: 
+```terminal
+  npm install express cors
+  node server.js
+```
+If it is successfully running, you should see "Listening on port: 8080"
+### Running with Docker
+Alternatively, if you have Docker installed then you can run these commands (cd into the server folder):
+```terminal
+  docker build -t fetch-receipt-processor-challenge . 
+```
+---
+## Assessment Guidelines
 
 ### Endpoint: Process Receipts
 
